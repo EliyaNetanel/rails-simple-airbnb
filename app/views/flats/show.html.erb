@@ -1,0 +1,26 @@
+<div>
+  <h1><%= @flat.name %></h1>
+  <h5><%= @flat.address %></h5>
+</div>
+
+<div>
+  <h3>A bit more info</h3>
+  <p><%= @flat.description %></p>
+  <p>img api</p>
+</div>
+
+<div>
+  <p>form:</p>
+  <%#= form_for @flat do |f|%>
+    <%#= f.input  %>
+</div>
+
+<div>
+  <h5>Details</h5>
+  <p>list inline, font awsome price,num of guests</p>
+</div>
+
+<p><%= link_to "Edit", edit_flat_path %></p>
+
+<p><%=  link_to 'delete', @flat, method: :delete, data: { confirm: "Are you sure?" } %></p>
+
